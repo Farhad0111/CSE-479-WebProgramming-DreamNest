@@ -1,0 +1,103 @@
+@import "./breakpoints.scss";
+@import "./variables.scss";
+
+.main-container {
+  padding: 40px 200px 120px;
+
+  @include xl {
+    padding: 40px 80px 120px;
+  }
+
+  @include lg {
+    padding: 40px 50px 120px;
+  }
+
+  @include sm {
+    padding: 40px 20px 120px;
+  }
+
+  h1 {
+    font-weight: 800;
+    color: $blue;
+  }
+
+  .edit-btn {
+    float: right;
+    padding: 0.2rem 0.5rem;
+    margin-top: -20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #222;
+    background-color: #ddd;
+
+    border: 1px solid #666;
+    border-radius: 5px;
+  }
+
+  .container {
+    margin: 40px 0px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1.5px solid #ccc;
+    box-shadow: 0 2px 4px rgba(217, 213, 213, 0.4);
+  }
+
+  .basic {
+    display: flex;
+
+    img {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50rem;
+      margin-right: 2rem;
+    }
+
+    .description {
+      max-width: 75%;
+      h2 {
+        font-size: 1.3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+      }
+      .profession {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .about {
+        font-size: 0.95rem;
+        font-weight: 300;
+        letter-spacing: 0.05rem;
+        text-align: justify;
+      }
+    }
+  }
+
+  .personal {
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .box {
+      display: flex;
+      font-weight: 300;
+
+      .left,
+      .right {
+        width: 40%;
+
+        p {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

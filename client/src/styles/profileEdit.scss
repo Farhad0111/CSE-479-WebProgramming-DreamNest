@@ -1,0 +1,87 @@
+@import "./breakpoints.scss";
+@import "./variables.scss";
+
+.main-container {
+  padding: 40px 300px 120px;
+
+  @include xl {
+    padding: 40px 80px 120px;
+  }
+
+  @include lg {
+    padding: 40px 50px 120px;
+  }
+
+  @include sm {
+    padding: 40px 20px 120px;
+  }
+
+  h1 {
+    font-weight: 800;
+    color: $blue;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    img {
+      height: 15rem;
+      width: 15em;
+      border-radius: 50rem;
+      cursor: pointer;
+    }
+
+    label {
+      height: 15rem;
+      width: 15em;
+      border-radius: 50rem;
+      transition: all 0.3s;
+    }
+
+    label:hover {
+      filter: brightness(0.8);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .user-detail {
+      width: 100%;
+
+      input,
+      textarea {
+        outline: none;
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.5rem 0.7rem;
+        margin-bottom: 1rem;
+        border: 1px solid #666;
+        border-radius: 5px;
+      }
+
+      input {
+        height: 2.5rem;
+      }
+
+      textarea {
+        height: 10rem;
+      }
+
+      button {
+        margin-top: 1rem;
+        padding: 0.5rem 2rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #eee;
+        background-color: rgb(46, 174, 46);
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

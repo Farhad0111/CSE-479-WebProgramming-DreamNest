@@ -1,0 +1,26 @@
+@import "./variables.scss";
+@import "./breakpoints.scss";
+
+.slide {
+  width: 100vw;
+  height: 85vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("../../public/assets/cover.jpg");
+  background-size: cover;
+
+  h1 {
+    padding: 180px 20px;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    color: white;
+
+    span {
+      color: $pinkred;
+    }
+    .nest {
+      font-weight: 300;
+    }
+  }
+}
