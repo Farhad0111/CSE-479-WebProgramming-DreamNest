@@ -1,0 +1,3 @@
+npm i express body-parser bcryptjs cors dotenv multer multer-gridfs-storage jsonwebtoken mongoose mongodb
+
+npm init -y
